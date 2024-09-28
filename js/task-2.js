@@ -1,4 +1,11 @@
-
+function formatMessage(message, maxLength) {
+    const massageLength = message.length;
+    if (massageLength <= maxLength) {
+        return message;
+    } else {
+        return message.slice(0, maxLength) + "...";
+    }
+}
 
 
 
