@@ -3,9 +3,9 @@ function checkForSpam(message) {
     const saleMessage = "sale";
     const lowerMessage = message.toLowerCase();
     if(lowerMessage.includes(spamMessage) || lowerMessage.includes(saleMessage)) {
-        return "true";
+        return true;
     } else {
-        return "false";
+        return false;
     }
 }
 
